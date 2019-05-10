@@ -51,4 +51,36 @@ public class MainActivity extends AppCompatActivity {
         tv1.setText(result);
 
     }
+
+
+    //este metodo realiza la multiplicacion
+    public void Multiplicar(View view) {
+        String valor1 = et1.getText().toString();
+        String valor2 = et2.getText().toString();
+
+        int num1 = Integer.parseInt(valor1);
+        int num2 = Integer.parseInt(valor2);
+
+        int multiplicacion = num1 * num2;
+
+        String result = String.valueOf(multiplicacion);
+        tv1.setText(result);
+
+    }
+
+
+//este metodo realiza la division
+public void Dividir(View view) {
+        String valor1 = et1.getText().toString();
+        String valor2 = et2.getText().toString();
+
+        int num1 = Integer.parseInt(valor1);
+        int num2 = Integer.parseInt(valor2);
+
+        int division = num1 / num2;
+
+        String result = String.valueOf(division);
+        tv1.setText(result);
+
+        }
 }
